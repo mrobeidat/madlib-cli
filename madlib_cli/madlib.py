@@ -19,13 +19,13 @@ import re
 #             print(name)
 #     return file_content
 
-def read_template(filepath: str) -> str:
+def read_template(fpath: str) -> str:
 
-    if filepath != "assets/text1.txt":
+    if fpath != "assets/text1.txt":
 
         raise FileNotFoundError('no path found')
 
-    with open(filepath, 'r') as file:
+    with open(fpath, 'r') as file:
 
         file_content = file.read()
 
